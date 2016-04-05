@@ -1,0 +1,355 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: fran-bold;
+  src: url('fonts/Franchise-Bold.ttf');
+}
+html {
+  font-family: sans-serif;
+  font-size: 14px;
+  line-height: 1.428;
+  height: 100%;
+}
+body {
+  height: 100%;
+  overflow-x: hidden;
+}
+p {
+  margin-bottom: 24px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 14px;
+}
+h6 {
+  font-size: 12px;
+}
+.content-wrapper {
+  background-color: #fff;
+  position: absolute;
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 1;
+}
+.menu {
+  position: absolute;
+  width: 20%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.menu ul {
+  list-style: none;
+}
+.menu ul h4 {
+  padding-left: 10px;
+}
+.menu ul li {
+  border-bottom: 5px solid #888888;
+  padding: 30px 0 30px 10px;
+  cursor: pointer;
+}
+.menu ul li:hover {
+  background-color: #5aff86;
+}
+.menu ul li:active {
+  background-color: #5aff86;
+}
+header {
+  height: 100px;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 5px double #888888;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+header .logo {
+  align-self: center;
+  height: 85%;
+  margin-right: 20px;
+  cursor: pointer;
+}
+header .logo img {
+  height: 100%;
+}
+header h2 {
+  margin-bottom: 0;
+  align-self: center;
+}
+header .logInOut {
+  align-self: center;
+  font-size: 130%;
+}
+header .logInOut .login {
+  cursor: pointer;
+}
+header .logInOut .divider {
+  margin: 0 10px;
+}
+header .logInOut .signup {
+  cursor: pointer;
+}
+@media screen and (max-width: 800px) {
+  header {
+    height: 120px;
+    padding: 10px;
+    box-sizing: content-box;
+    flex-direction: column;
+  }
+  header .logo {
+    height: 70%;
+  }
+  header .logInOut {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 110%;
+  }
+}
+@media screen and (max-width: 550px) {
+  header {
+    height: 150px;
+    padding-bottom: 20px;
+  }
+  header .logo {
+    height: 60%;
+  }
+  header h2 {
+    text-align: center;
+  }
+}
+.content {
+  margin-bottom: auto;
+  padding: 20px;
+}
+.content .tSubmit {
+  padding-top: 20px;
+}
+.content .tSubmit .topicSubmit {
+  color: #fff;
+  background-color: #00008B;
+  padding: 20px 60px;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.content .tSubmit .topicSubmit:hover {
+  background-color: #0000f1;
+}
+footer {
+  width: 100%;
+  min-height: 100px;
+  border-top: 5px double #888888;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+footer .footerCol {
+  display: flex;
+  width: 100%;
+  background-color: blueviolet;
+}
+footer .footerCol section {
+  width: 33.3%;
+  min-height: 200px;
+  background-color: #5aff86;
+  display: flex;
+}
+footer .footerCol section:nth-child(odd) {
+  background-color: aqua;
+}
+footer .copy {
+  padding: 20px 0;
+  text-align: center;
+}
+@media screen and (max-width: 550px) {
+  footer .footerCol {
+    display: block;
+  }
+  footer .footerCol section {
+    width: 100%;
+  }
+}
+.guide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  font-size: 250%;
+  z-index: 99;
+}
+.guide .reply {
+  position: absolute;
+  top: 30px;
+  left: 110px;
+}
+.guide .reply .replyText {
+  font-size: 50%;
+}
+.guide .guideLogin {
+  position: absolute;
+  right: 130px;
+  top: 30px;
+}
+.guide .guideLogin .guideLoginText {
+  font-size: 50%;
+}
+.signUpModal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 99;
+  display: none;
+}
+.signUpModal .signUpForm {
+  position: relative;
+  width: 40%;
+  min-height: 60%;
+  min-height: 400px;
+  background-color: #fff;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  margin: auto;
+  box-sizing: border-box;
+  padding: 20px;
+}
+.signUpModal .signUpForm .fa-times-circle {
+  position: absolute;
+  right: 20px;
+  font-size: x-large;
+  cursor: pointer;
+}
+.signUpModal .signUpForm .fa-times-circle:hover {
+  color: #aaaaaa;
+}
+.signUpModal .signUpForm h1 {
+  text-align: center;
+}
+.signUpModal .signUpForm form {
+  display: flex;
+  flex-direction: column;
+}
+.signUpModal .signUpForm form label,
+.signUpModal .signUpForm form input {
+  font-size: 120%;
+}
+.signUpModal .signUpForm form input {
+  height: 40px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  padding: 3px 10px;
+  box-sizing: border-box;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.signUpModal .signUpForm form .submit {
+  margin-top: 20px;
+  width: 50%;
+  background-color: #fff;
+  align-self: center;
+}
+.regModal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 99;
+  display: none;
+}
+.regModal .regForm {
+  position: relative;
+  width: 40%;
+  min-height: 60%;
+  min-height: 400px;
+  background-color: #fff;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  margin: auto;
+  box-sizing: border-box;
+  padding: 20px;
+}
+.regModal .regForm .fa-times-circle {
+  position: absolute;
+  right: 20px;
+  font-size: x-large;
+  cursor: pointer;
+}
+.regModal .regForm .fa-times-circle:hover {
+  color: #aaaaaa;
+}
+.regModal .regForm h1 {
+  text-align: center;
+}
+.regModal .regForm form {
+  display: flex;
+  flex-direction: column;
+}
+.regModal .regForm form label,
+.regModal .regForm form input {
+  font-size: 120%;
+}
+.regModal .regForm form input {
+  height: 40px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  padding: 3px 10px;
+  box-sizing: border-box;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+.regModal .regForm form .error {
+  color: #ff0000;
+  margin-bottom: 20px;
+  visibility: hidden;
+}
+.regModal .regForm form .signupSubmit {
+  margin-top: 20px;
+  width: 50%;
+  background-color: #fff;
+  align-self: center;
+}
+@media screen and (max-width: 460px) {
+  .signUpModal .signUpForm form label,
+  .signUpModal .signUpForm form input {
+    font-size: 90%;
+  }
+  .regModal .regForm form label,
+  .regModal .regForm form input {
+    font-size: 90%;
+  }
+}

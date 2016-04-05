@@ -1,0 +1,51 @@
+footer {
+  //background-color: bisque;
+  width: 100%;
+  min-height: 100px;
+  .topBorder();
+  //margin-top: 10px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+
+
+  .footerCol {
+    display: flex;
+    width: 100%;
+    background-color: blueviolet;
+
+
+
+    section {
+      width: 33.3%;
+      min-height: 200px;
+      background-color: #5aff86;
+      display: flex;
+
+      &:nth-child(odd) {
+        background-color: aqua;
+      }
+    }
+
+  }
+
+  .copy {
+    padding: 20px 0;
+    text-align: center;
+
+  }
+}
+
+@media screen and (max-width: 550px) {
+  footer {
+    //display: block;
+
+    .footerCol {
+      display: block;
+
+      section {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,158 @@
+.signUpModal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: fade(#000, 70%);
+  z-index: 99;
+  display: none;
+  //display: flex;
+
+  .signUpForm {
+    position: relative;
+    width: 40%;
+    min-height: 60%;
+    min-height: 400px;
+    background-color: #fff;
+    .roundCorners(30px);
+    margin: auto;
+    box-sizing: border-box;
+    padding: 20px;
+
+    .fa-times-circle {
+      position: absolute;
+      right: 20px;
+      font-size: x-large;
+      cursor: pointer;
+
+      &:hover {
+        color: #aaaaaa;
+      }
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+
+      label, input {
+        font-size: 120%;
+      }
+
+      input {
+        height: 40px;
+        border: 2px solid rgba(0,0, 0, .3);
+        padding: 3px 10px;
+        box-sizing: border-box;
+        .roundCorners(5px);
+        margin-bottom: 20px;
+      }
+
+      .submit {
+        margin-top: 20px;
+        width: 50%;
+        background-color: #fff;
+        align-self: center;
+      }
+    }
+  }
+
+}
+
+.regModal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: fade(#000, 70%);
+  z-index: 99;
+  display: none;
+  //display: flex;
+
+  .regForm {
+    position: relative;
+    width: 40%;
+    min-height: 60%;
+    min-height: 400px;
+    background-color: #fff;
+    .roundCorners(30px);
+    margin: auto;
+    box-sizing: border-box;
+    padding: 20px;
+
+    .fa-times-circle {
+      position: absolute;
+      right: 20px;
+      font-size: x-large;
+      cursor: pointer;
+
+      &:hover {
+        color: #aaaaaa;
+      }
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+
+      label, input {
+        font-size: 120%;
+      }
+
+      input {
+        height: 40px;
+        border: 2px solid rgba(0,0, 0, .3);
+        padding: 3px 10px;
+        box-sizing: border-box;
+        .roundCorners(5px);
+
+      }
+
+      .error {
+        color: #ff0000;
+        margin-bottom: 20px;
+        visibility: hidden;
+      }
+
+      .signupSubmit {
+        margin-top: 20px;
+        width: 50%;
+        background-color: #fff;
+        align-self: center;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 460px) {
+  .signUpModal{
+    .signUpForm {
+      form {
+        label, input {
+          font-size: 90%;
+        }
+      }
+    }
+  }
+
+  .regModal{
+    .regForm {
+      form {
+        label, input {
+          font-size: 90%;
+        }
+      }
+    }
+  }
+
+}

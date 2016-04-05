@@ -1,0 +1,25 @@
+.bottomBorder(@bHt: @bHeight, @bSt: @bStyle, @bCr: @bColor){
+  border-bottom:  @bHt @bSt @bCr;
+}
+
+.topBorder(@bHt: @bHeight, @bSt: @bStyle, @bCr: @bColor){
+  border-top:  @bHt @bSt @bCr;
+}
+
+.callToActionButton (){
+  color: #fff;
+  background-color: @callToActionBG;
+  padding: 20px 60px;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 20px;
+
+  &:hover {
+    background-color: lighten(@callToActionBG, 20%);
+  }
+}
+
+.roundCorners(@rad: 10px){
+  -webkit-border-radius: @rad;
+  border-radius: @rad;
+}

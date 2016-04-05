@@ -1,0 +1,29 @@
+{
+  "users": [
+    {
+      "u_id": 1,
+      "f_name": "todd",
+      "l_name": "shelton",
+      "email": "todd@todd.com",
+      "password": "hello",
+      "role": "admin",
+      "topics": [
+        {
+          "topicTitle": "hello",
+          "topicDescription": "this is it"
+        },
+        {
+          "topicTitle": "hello two",
+          "topicDescription": "this is it"
+        }
+      ]
+    },
+    {
+      "u_id": 2,
+      "f_name": "tom",
+      "l_name": "smith",
+      "email": "tom@todd.com",
+      "password": "yes"
+    }
+  ]
+}
